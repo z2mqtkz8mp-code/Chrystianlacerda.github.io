@@ -6,88 +6,76 @@
 <title>Shalon Imóveis</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-}
+body { margin:0; font-family:Arial; background:#111; color:#fff; }
 
 header {
-    background: #8B0000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
+    background:#000;
+    padding:20px;
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+    border-bottom:2px solid #8B0000;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    padding:100px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+    background-size:cover;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
+.hero h1 { font-size:42px; margin-bottom:10px; }
+.hero p { color:#ccc; }
 
 .btn {
-    margin-top: 20px;
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    display:inline-block;
+    margin-top:20px;
+    background:#8B0000;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:8px;
 }
 
-.section {
-    padding: 40px 20px;
-    text-align: center;
-}
+.section { padding:50px 20px; text-align:center; }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
 
 .card {
-    background: white;
-    width: 280px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background:#1c1c1c;
+    width:280px;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #333;
 }
 
-.card img {
-    width: 100%;
-}
+.card img { width:100%; }
+.card h3 { margin:10px; }
+.card p { margin:10px; color:#aaa; }
 
-.card h3 {
-    margin: 10px;
-}
-
-.card p {
-    margin: 10px;
-    color: #555;
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
 }
 
 footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background:#000;
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #333;
 }
 </style>
 
@@ -95,47 +83,50 @@ footer {
 
 <body>
 
-<header>
-Shalon Imóveis
-</header>
+<header>Shalon Imóveis</header>
 
 <section class="hero">
-<h1>Realizando Sonhos</h1>
-<p>Compra, venda e locação de imóveis</p>
-
-<a class="btn" href="https://wa.me/5511940308383" target="_blank">
-Falar no WhatsApp
-</a>
+<h1>Imóveis em São Paulo</h1>
+<p>Compra, venda e locação de imóveis com segurança</p>
+<a class="btn" href="https://wa.me/5511940308383" target="_blank">Fale conosco</a>
 </section>
 
 <section class="section">
-<h2>Imóveis em destaque</h2>
+<h2>Imóveis disponíveis</h2>
 
 <div class="cards">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c">
-<h3>Apartamento Moderno</h3>
-<p>2 dormitórios • 1 vaga • Sacada</p>
+<h3>Apartamento</h3>
+<p>A partir de R$ 450.000</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
-<h3>Casa Espaçosa</h3>
-<p>3 dormitórios • Quintal • Garagem</p>
+<h3>Casa</h3>
+<p>A partir de R$ 650.000</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<h3>Cobertura</h3>
-<p>Vista incrível • Área gourmet</p>
+<h3>Galpão</h3>
+<p>Consulte valores</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507089947367-19c1da9775ae">
+<h3>Kitnet</h3>
+<p>A partir de R$ 1.200/mês</p>
 </div>
 
 </div>
 </section>
 
+<a class="whatsapp" href="https://wa.me/5511940308383" target="_blank">💬</a>
+
 <footer>
-© Shalon Imóveis - Todos os direitos reservados
+Shalon Imóveis - São Paulo
 </footer>
 
 </body>
